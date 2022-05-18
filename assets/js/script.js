@@ -1,1 +1,5 @@
-$('#currentDay').append(moment().format('dddd MMMM Do, YYYY, h:mm:ss a'));
+$(document).ready(function() {
+    var currentDate = moment().format('dddd, MMMM Do');
+
+    $('#currentDay').append(currentDate);
+});
